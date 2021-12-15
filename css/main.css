@@ -348,6 +348,7 @@ template {
 }
 
 ul {
+  padding: 0;
   list-style: none;
 }
 
@@ -359,5 +360,28 @@ a {
 button {
   margin: 0;
   padding: 0;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1170px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
