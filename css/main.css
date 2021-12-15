@@ -362,6 +362,10 @@ button {
   padding: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -383,5 +387,29 @@ button {
   .container {
     width: 1170px;
   }
+}
+
+.page-header {
+  background: #ccc;
+  padding: 20px 0;
+}
+
+.page-header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-header__item:not(:last-child) {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */

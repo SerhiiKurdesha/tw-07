@@ -1,0 +1,22 @@
+.page-header{
+    background: #ccc;
+    padding: 20px 0;
+}
+
+.page-header__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-header__list{
+    display: flex;
+}
+
+.page-header__item{
+
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+}
+
+.page-header__link{}
