@@ -412,4 +412,8 @@ body {
 .page-header__item:not(:last-child) {
   margin-right: 20px;
 }
+
+.page-header__link {
+  color: #000000;
+}
 /*# sourceMappingURL=main.css.map */
