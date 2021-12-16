@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>day after day</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -13,24 +13,66 @@
     <!-- HEADER -->
 
     <header class="page-header">
-        <div class="container page-header__content">
-            <a href="" class="logo">Лого<span class="logos">type</span></a>
-            <ul class="page-header__list">
-                <li class="page-header__item">
-                    <a href="#" class="page-header__link">О нас</a>
-                </li>
-                <li class="page-header__item">
-                    <a href="#" class="page-header__link">Продукция</a>
-                </li>
-                <li class="page-header__item">
-                    <a href="#" class="page-header__link">Контакты</a>
-                </li>
-                <li class="page-header__item">
-                    <a href="#" class="page-header__link">Больше</a>
-                </li>
-            </ul>
-        </div>
+        <div class="container">
+            <nav class="page-header__nav">
+                <ul class="page-header__list">
+                    <li class="page-header__item">
+                        <a href="#" class="page-header__link">shop</a>
+                    </li>
+                    <li class="page-header__item">
+                        <a href="#" class="page-header__link">explore</a>
+                    </li>
+                </ul>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="30">
+                        <use href="svg/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>    
+                <div class="page-header__logo">
+                    <a href="#">
+                        <img class="page-header__logo-img" src="./images/grovemade.png" alt="logo">
+                    </a>
+                </div>
+                <div class="page-header__card">
+                    <a href="#" class="page-header__card__link">my cart</a>
+                </div>
+            </nav>  
+        </div>    
     </header>
+
+    <!-- MAIN -->
+
+    <main></main>
+
+    <!-- ===========================MOBILE----MENU -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="30">
+                <use href="svg/sprite.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">shop</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">explore</a>
+            </li>
+        </ul>
+        <div class="mobile-menu__cart">
+            <a href="#" class="mobile-menu__link-cart">my cart</a>
+        </div>
+    </div>
+
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/modal-menu.js"></script>
     
 </body>
 </html>
