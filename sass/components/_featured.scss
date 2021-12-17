@@ -1,0 +1,33 @@
+.featured{
+    padding-top: 80px;
+
+    @media screen and (min-width: 768px){
+        padding-top: 100px;
+    }
+
+    @media screen and (min-width: 1340px){
+        padding-top: 130px;
+    }
+}
+.featured__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 26 / 23 * 100%;
+    text-align: center;
+    color: $black-color;
+
+    @media screen and (min-width: 768px){
+        font-size: 33px;
+        line-height: 36 / 33 * 100%;
+    }
+}
+.featured__text{
+    margin-top: 16px;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18 / 15 * 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #a0a0a0;
+}
