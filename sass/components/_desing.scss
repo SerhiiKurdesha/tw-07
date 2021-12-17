@@ -78,9 +78,70 @@
         display: flex;
     } 
 }
-.desing__item{}
+.desing__item{
+
+    @media screen and (max-width: 767px){
+
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+
+        &:not(:last-child){
+            margin-right: 25px;
+        }
+    }
+}
+// ==========================================
+.desing-card__link{
+    display: block;
+}
+.desing-card__overlay{
+    position: relative;
+    overflow: hidden;   
+}
+.desing-card__out{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(199, 140, 72, .6);
+    opacity: 1;
+    transform: translateX(100%);
+    transition: transform 400ms ease-in-out;
+}
+.desing-card__link:hover .desing-card__out,
+.desing-card__link:focus .desing-card__out{
+    transform: translateX(0);
+}
+.desing-card__text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 22 / 18 * 100%;
+    color: $white-color;
+}
+// =========================================
+.desing-div__subtitle{
+    padding-top: 28px;
+
+    @media screen and (min-width: 768px){
+        padding-top: 38px;
+    }
+
+    @media screen and (min-width: 1340px){
+        padding-top: 48px;
+    }
+}
 .desing__subtitle{
-    margin-top: 28px;
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
@@ -88,9 +149,27 @@
     color: $black-color;
 
     @media screen and (min-width: 768px){
-        margin-top: 48px;
         font-size: 27px;
         line-height: 30 / 27 * 100%;
     }
 }
-.desing-card__link{}
+.desing-div__sublink{
+    margin-top: 23px;
+}
+.desing__sublink{
+    font-style: normal;
+    font-size: 13px;
+    line-height: 15 / 13 * 100%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $black-color;
+
+    transition: color 300ms ease-in-out;
+
+    @media screen and (min-width: 1340px){
+
+        &:hover, &:focus{
+            color: #a0a0a0;
+        }
+    }
+}

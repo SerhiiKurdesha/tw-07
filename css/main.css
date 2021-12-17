@@ -659,8 +659,84 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .desing__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desing__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.desing-card__link {
+  display: block;
+}
+
+.desing-card__overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.desing-card__out {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(199, 140, 72, 0.6);
+  opacity: 1;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
+.desing-card__link:hover .desing-card__out,
+.desing-card__link:focus .desing-card__out {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.desing-card__text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  line-height: 122.22222%;
+  color: #ffffff;
+}
+
+.desing-div__subtitle {
+  padding-top: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .desing-div__subtitle {
+    padding-top: 38px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .desing-div__subtitle {
+    padding-top: 48px;
+  }
+}
+
 .desing__subtitle {
-  margin-top: 28px;
   font-style: normal;
   font-weight: normal;
   font-size: 23px;
@@ -670,9 +746,29 @@ img {
 
 @media screen and (min-width: 768px) {
   .desing__subtitle {
-    margin-top: 48px;
     font-size: 27px;
     line-height: 111.11111%;
+  }
+}
+
+.desing-div__sublink {
+  margin-top: 23px;
+}
+
+.desing__sublink {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 115.38462%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+@media screen and (min-width: 1340px) {
+  .desing__sublink:hover, .desing__sublink:focus {
+    color: #a0a0a0;
   }
 }
 
