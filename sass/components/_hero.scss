@@ -1,0 +1,74 @@
+.hero{
+    max-height: 504px;
+    background-color: $background-color;
+    background-image: url(../../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media screen and (min-width: 768px){
+        padding-top: 148px;
+        padding-bottom: 157px;
+    }
+
+    @media screen and (min-width: 1340px){
+        padding-top: 188px;
+        padding-bottom: 197px;
+    }
+}
+.hero__title{
+    text-align: center;
+
+    @media screen and (max-width: 479px){
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 26 / 23 * 100%;
+        color: $white-color;
+    }
+
+    @media screen and (min-width: 480px){
+        font-weight: 400;
+        font-size: 33px;
+        line-height: 36 / 33 * 100%;
+        color: $white-color;
+    }
+
+    @media screen and (min-width: 768px){
+        font-size: 43px;
+        line-height: 46 / 43 * 100%;
+    }
+}
+.hero__text{
+    margin-top: 12px;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: $white-color;
+}
+.hero__button{
+    margin-top: 28px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $white-color;
+
+    @media screen and (min-width: 768px){
+
+        &:hover, &:focus{
+            border-bottom: 1px solid $white-color;
+            cursor: pointer;
+        }
+    }
+}
