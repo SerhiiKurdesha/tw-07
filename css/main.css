@@ -478,7 +478,7 @@ img {
 .hero {
   max-height: 504px;
   background-color: #252d3d;
-  background-image: url(../../images/hero.jpg);
+  background-image: url(../images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
