@@ -376,6 +376,7 @@ h1, h2, h3, h4, h5 {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 .container {
@@ -557,6 +558,121 @@ img {
   .hero__button:hover, .hero__button:focus {
     border-bottom: 1px solid #ffffff;
     cursor: pointer;
+  }
+}
+
+.desing {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .desing {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desing {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .desing {
+    padding-top: 80px;
+  }
+}
+
+.desing__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 165.21739%;
+  text-align: center;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .desing__title {
+    font-size: 33px;
+    line-height: 145.45455%;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .desing__title {
+    font-size: 43px;
+    line-height: 134.88372%;
+  }
+}
+
+.desing__text {
+  margin-top: 23px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 171.42857%;
+  letter-spacing: 0.1em;
+  color: #a0a0a0;
+}
+
+.desing__link {
+  margin-top: 23px;
+  display: block;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 161.53846%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.desing__link:hover, .desing__link:focus {
+  color: #a0a0a0;
+}
+
+@media screen and (max-width: 767px) {
+  .desing__content {
+    margin-top: 41px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desing__content {
+    margin-top: 61px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .desing__content {
+    margin-top: 81px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desing__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.desing__subtitle {
+  margin-top: 28px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 113.04348%;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .desing__subtitle {
+    margin-top: 48px;
+    font-size: 27px;
+    line-height: 111.11111%;
   }
 }
 
