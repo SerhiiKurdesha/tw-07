@@ -173,3 +173,19 @@
         }
     }
 }
+// ============================
+.desing-card__img-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.desing-card__svg-item{
+
+    &:not(:last-child){
+        margin-right: 25px;
+    }
+}
+.desing-card__svg{
+    fill: $white-color;
+}
