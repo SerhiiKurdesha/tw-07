@@ -835,6 +835,29 @@ img {
   color: #a0a0a0;
 }
 
+.featured__slider {
+  overflow: hidden;
+  background: coral;
+}
+
+.featured__slider-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: darkcyan;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+
+.featured__slider-item {
+  max-height: 434px;
+  max-width: 310px;
+}
+
+.featured__slider-buttons {
+  text-align: center;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
