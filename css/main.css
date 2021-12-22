@@ -807,6 +807,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 /* Слайд */
@@ -821,6 +824,60 @@ img {
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
+.slider {
+  position: relative;
+  padding: 0 30px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -25px 0 0 0;
+  z-index: 1;
+  font-size: 0;
+  width: 30px;
+  height: 50px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../svg/left.svg) 0 0 no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url(../svg/right.svg) 0 0 no-repeat;
+}
+
+.slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
