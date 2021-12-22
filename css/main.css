@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -398,7 +399,7 @@ img {
 
 @media screen and (min-width: 1340px) {
   .container {
-    width: 1170px;
+    width: 1340px;
   }
 }
 
@@ -793,71 +794,33 @@ img {
   fill: #ffffff;
 }
 
-.featured {
-  padding-top: 80px;
-}
-
-@media screen and (min-width: 768px) {
-  .featured {
-    padding-top: 100px;
-  }
-}
-
-@media screen and (min-width: 1340px) {
-  .featured {
-    padding-top: 130px;
-  }
-}
-
-.featured__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 23px;
-  line-height: 113.04348%;
-  text-align: center;
-  color: #000000;
-}
-
-@media screen and (min-width: 768px) {
-  .featured__title {
-    font-size: 33px;
-    line-height: 109.09091%;
-  }
-}
-
-.featured__text {
-  margin-top: 16px;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 120%;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: #a0a0a0;
-}
-
-.featured__slider {
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
   overflow: hidden;
-  background: coral;
 }
 
-.featured__slider-list {
+/* Лента слайдов */
+.slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: darkcyan;
-  -webkit-transition: 500ms ease-in-out;
-  transition: 500ms ease-in-out;
 }
 
-.featured__slider-item {
-  max-height: 434px;
-  max-width: 310px;
-}
-
-.featured__slider-buttons {
-  text-align: center;
-}
-
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
 .menu-container {
   position: fixed;
   top: 0;
