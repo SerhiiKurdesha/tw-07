@@ -56,19 +56,35 @@
     color: $white-color;
 }
 .hero__button{
-    margin-top: 28px;
+    padding-top: 28px;
+    padding-bottom: 5px;
     font-style: normal;
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $white-color;
+    cursor: pointer;
+    position: relative;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 768px){
 
-        &:hover, &:focus{
-            border-bottom: 1px solid $white-color;
-            cursor: pointer;
+    @media screen and (min-width: 1340px){
+
+        &::after{
+            content: '';
+            display: block;
+            width: 0%;
+            height: 1px;
+            position: absolute;
+            background: currentColor;
+            left: 0;
+            bottom: 0;
+            transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-    }
+
+        &:focus, &:hover::after{
+            width: 100%;
+        }
+    }                   
 }
