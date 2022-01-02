@@ -1,3 +1,37 @@
+.featured{
+    padding: 80px 0 55px;
+
+    @media screen and (min-width: 768px){
+        padding: 100px 0 75px;
+    }
+
+    @media screen and (min-width: 1340px){
+        padding: 130px 0 95px;
+    }
+}
+.featured__content{
+    text-align: center;
+}
+.featured__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 26 / 23 * 100%;
+    color: $black-color;
+
+    @media screen and (min-width: 768px){
+        font-size: 33px;
+        line-height: 36 / 33 * 100%;
+    }
+}
+.featured__text{
+    margin-top: 16px;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18 / 15 * 100%;
+    letter-spacing: 0.1em;
+    color: $gray-color;
+}
 /* Слайдер */
 .slick-slider{}
 /* Слайдер запущен */
