@@ -1,10 +1,6 @@
 .desing{
-    text-align: center;
+    padding-top: 40px;
     
-    @media screen and (max-width: 767px){
-        padding-top: 40px;
-    }
-
     @media screen and (min-width: 768px){
         padding-top: 60px;
     }
@@ -21,7 +17,6 @@
     font-weight: normal;
     font-size: 23px;
     line-height: 38 / 23 * 100%;
-    text-align: center;
     color: $black-color;
 
     @media screen and (min-width: 768px){
@@ -44,7 +39,7 @@
     color: #a0a0a0;
 }
 .desing__content-link{
-    margin-top: 23px;
+    margin-top: 26px;
 }
 .desing__link{
     padding-bottom: 5px;
@@ -70,16 +65,13 @@
         transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &:hover::after,
-    &:focus::after{
+    &:hover::after{
         width: 100%;
     }
 }
 .desing__content{
-
-    @media screen and (max-width: 767px){
-        margin-top: 41px;
-    }
+    margin-top: 41px;
+    text-align: center;
 
     @media screen and (min-width: 768px){
         margin-top: 61px;
@@ -199,8 +191,7 @@
             transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        &:hover::after, 
-        &:focus::after{
+        &:hover::after{
             width: 100%;
         }
     }
