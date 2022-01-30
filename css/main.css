@@ -965,6 +965,10 @@ img {
   background-color: #000;
 }
 
+.slider__item {
+  padding: 0 12px;
+}
+
 .inspiration {
   max-width: 1440px;
   max-height: 504px;
