@@ -115,5 +115,12 @@
     background-color: #000;
 }
 .slider__item{
-    padding: 0 12px;
+    
+    @media screen and (min-width: 768px){
+        padding: 0 12px;
+    }
+
+    & img{
+        margin: 0 auto;
+    }
 }
