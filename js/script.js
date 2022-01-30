@@ -9,7 +9,7 @@ $(document).ready(function(){
         infinite: true, 
         initialSlide: 1,
         autoplay: false,
-        autoplaySpeed: 500,
+        autoplaySpeed: 1000,
         responsive:[
             {
                 breakpoint: 1339,

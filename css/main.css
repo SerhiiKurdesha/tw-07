@@ -855,6 +855,19 @@ img {
 
 .featured__content {
   text-align: center;
+  margin-bottom: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .featured__content {
+    margin-bottom: 53px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .featured__content {
+    margin-bottom: 83px;
+  }
 }
 
 .featured__title {
@@ -965,14 +978,36 @@ img {
   background-color: #000;
 }
 
+.slider__item {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
   .slider__item {
     padding: 0 12px;
   }
 }
 
-.slider__item img {
-  margin: 0 auto;
+.slider__text {
+  margin-top: 23px;
+}
+
+.slider__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 161.53846%;
+  letter-spacing: 0.1em;
+  color: #a0a0a0;
+}
+
+.slider__price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 161.53846%;
+  letter-spacing: 0.1em;
+  color: #a0a0a0;
 }
 
 .inspiration {

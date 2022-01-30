@@ -11,6 +11,15 @@
 }
 .featured__content{
     text-align: center;
+    margin-bottom: 33px;
+
+    @media screen and (min-width: 768px){
+        margin-bottom: 53px;
+    }
+
+    @media screen and (min-width: 1340px){
+        margin-bottom: 83px;
+    }
 }
 .featured__title{
     font-style: normal;
@@ -115,12 +124,28 @@
     background-color: #000;
 }
 .slider__item{
+    margin: 0 auto;
     
     @media screen and (min-width: 768px){
         padding: 0 12px;
     }
-
-    & img{
-        margin: 0 auto;
-    }
+}
+.slider__text{
+    margin-top: 23px;
+}
+.slider__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21 / 13 * 100%;
+    letter-spacing: 0.1em;
+    color: $gray-color;
+}
+.slider__price{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21 / 13 * 100%;
+    letter-spacing: 0.1em;
+    color: $gray-color;
 }
