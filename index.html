@@ -51,7 +51,7 @@
                     <h1 class="hero__title">The Desk Shelf System</h1>
                     <p class="hero__text">Available in Walnut or Maple</p>
                     <div class="hero__button-content">
-                        <button type="button" class="hero__button">learn more</button>
+                        <button type="button" class="hero__button" data-open-modal>learn more</button>
                     </div>
                 </div>
                 
@@ -1205,6 +1205,20 @@
         </div>
     </div>
 
+    <!-- =================================BACKDROP -->
+
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+            <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum amet animi quia dolor sit mollitia! Soluta aliquid sint sed quae praesentium adipisci repellat ex sapiente doloremque, animi mollitia repellendus!</p>
+            <button class="modal__button" data-close-modal>
+                <svg width="40" height="30">
+                    <use href="svg/sprite.svg#icon-cross"></use>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
 
     <script
     defer
@@ -1213,6 +1227,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="./js/modal-menu.js"></script>
+  <script src="./js/modal-backdrop.js"></script>
 
   <!-- подключаем jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
