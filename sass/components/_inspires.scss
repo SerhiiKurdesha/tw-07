@@ -1,0 +1,48 @@
+.inspires{
+    padding-bottom: 39px;
+}
+.inspires__content{
+    padding: 80px 0;
+    text-align: center;
+    background: #9aa8b1;
+
+    @media screen and (min-width: 768px){
+        padding: 100px 0;
+    }
+
+    @media screen and (min-width: 1340px){
+        padding: 120px 0;
+    }
+
+    & > img{
+        display: inline-block;
+    }
+}
+.inspires__info{
+    margin-top: 24px;
+}
+.inspires__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 38 / 23 * 100%;
+    color: $white-color;
+
+    @media screen and (min-width: 768px){
+        font-size: 33px;
+        line-height: 48 / 33 * 100%;
+    }
+
+    @media screen and (min-width: 1340px){
+        font-size: 43px;
+        line-height: 58 / 43 * 100%;
+    }
+}
+.inspires__text{
+    margin-top: 23px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24 / 14 * 100%;
+    letter-spacing: 0.1em;
+    color: $white-color;
+}
