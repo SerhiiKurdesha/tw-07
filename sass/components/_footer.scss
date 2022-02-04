@@ -19,7 +19,17 @@
         display: flex;
     }
 }
-.footer__list{}
+.footer__list{
+    min-width: 220px;
+
+    @media screen and (min-width: 768px){
+        min-width: 185px;
+    }
+
+    @media screen and (min-width: 1340px){
+        min-width: 160px;
+    }
+}
 .footer__item{
 
     &:not(:last-child){
@@ -40,17 +50,83 @@
 }
 .footer__link{
     font-style: normal;
-    font-size: 36px;
-    line-height: 38 / 36 * 100%;
+    font-size: 28px;
+    line-height: 30 / 28 * 100%;
     color: $black-color;
+    transition: color 300ms ease-in-out;
+
+    &:hover{
+        color: $gray-color;
+    }
 
     @media screen and (min-width: 768px){
-        font-size: 32px;
-        line-height: 34 / 32 * 100%;
+        font-size: 26px;
+        line-height: 28 / 26 * 100%;
     }
 
     @media screen and (min-width: 1340px){
         font-size: 22px;
         line-height: 24 / 22 * 100%;
+    }
+}
+.footer__info{
+
+    @media screen and (max-width: 767px){
+        margin-top: 40px;
+    }
+
+    @media screen and (min-width: 768px){
+        margin-left: 24px;
+    }
+}
+.footer__title{
+    margin-bottom: 23px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 34 / 32 * 100%;
+    color: $black-color;
+    text-align: center;
+
+    @media screen and (min-width: 768px){
+        font-size: 28px;
+        line-height: 30 / 28 * 100%;
+        text-align: start;
+    }
+
+    @media screen and (min-width: 1340px){
+        font-size: 22px;
+        line-height: 24 / 22 * 100%;
+    }
+}
+.footer__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16 / 14 * 100%;
+    letter-spacing: 0.1em;
+    color: $gray-color;
+
+    position: relative;
+    
+    @media screen and (min-width: 768px){
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 320px;
+            height: 1px;
+            background: $black-color;
+            top: 151px;
+            left: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px){
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px){
+        max-width: 378px;
     }
 }

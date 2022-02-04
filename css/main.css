@@ -1500,6 +1500,22 @@ img {
   }
 }
 
+.footer__list {
+  min-width: 220px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__list {
+    min-width: 185px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .footer__list {
+    min-width: 160px;
+  }
+}
+
 .footer__item:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -1518,15 +1534,21 @@ img {
 
 .footer__link {
   font-style: normal;
-  font-size: 36px;
-  line-height: 105.55556%;
+  font-size: 28px;
+  line-height: 107.14286%;
   color: #000000;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.footer__link:hover {
+  color: #a0a0a0;
 }
 
 @media screen and (min-width: 768px) {
   .footer__link {
-    font-size: 32px;
-    line-height: 106.25%;
+    font-size: 26px;
+    line-height: 107.69231%;
   }
 }
 
@@ -1534,6 +1556,78 @@ img {
   .footer__link {
     font-size: 22px;
     line-height: 109.09091%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__info {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__info {
+    margin-left: 24px;
+  }
+}
+
+.footer__title {
+  margin-bottom: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 106.25%;
+  color: #000000;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__title {
+    font-size: 28px;
+    line-height: 107.14286%;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .footer__title {
+    font-size: 22px;
+    line-height: 109.09091%;
+  }
+}
+
+.footer__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.28571%;
+  letter-spacing: 0.1em;
+  color: #a0a0a0;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background: #000000;
+    top: 151px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__text {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__text {
+    max-width: 378px;
   }
 }
 
